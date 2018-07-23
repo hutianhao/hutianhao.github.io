@@ -4,7 +4,7 @@
 >>2. class 类名{成员变量;成员方法;}
 >>3. 一个类中可以没有成员变量和成员方法
 
-```
+```java
 //hasNext()不可以识别空格
 //hasNextLine()可以识别空格
 import java.util.Scanner;
@@ -21,7 +21,7 @@ public class Test{
 }
 ```
 
-```
+```java
 public class Person{
     public static void main(String[] args){
        
@@ -37,17 +37,17 @@ public class Person{
 }
 ```
 >类的成员方法-声明
-```
+```java
 //访问修饰符 数据类型 函数名(参数列表);
 public int test(int a);/*方法的声明没有函数体*/
 ```
 
-```
+```java
 //把表达式里的值返回给主调方法
 return 表达式
 ```
 
-```
+```java
 例：计算两个数的和，并把结果返回给调用他的函数
 注意：返回类型和返回的结果的类型要一样，在调用某个成员方法的时候，给出的具体数值的个数和类型要跟形参相互匹配
 
@@ -70,7 +70,7 @@ public void add(int num1,int num2){
 
 >编写一个函数将二维数组进行转置
 
-```
+```java
 import java.util.Scanner;
 import java.lang.String;
 
