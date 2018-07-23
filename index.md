@@ -37,6 +37,7 @@ public class Person{
 }
 ```
 >类的成员方法-声明
+
 ```java
 //访问修饰符 数据类型 函数名(参数列表);
 public int test(int a);/*方法的声明没有函数体*/
@@ -46,29 +47,30 @@ public int test(int a);/*方法的声明没有函数体*/
 //把表达式里的值返回给主调方法
 return 表达式
 ```
-
-```java
-例：计算两个数的和，并把结果返回给调用他的函数
-注意：返回类型和返回的结果的类型要一样，在调用某个成员方法的时候，给出的具体数值的个数和类型要跟形参相互匹配
+* 例：计算两个数的和，并把结果返回给调用他的函数
+* 注意：返回类型和返回的结果的类型要一样，在调用某个成员方法的时候，给出的具体数值的个数和类型要跟形参相互匹配
 
 1.返回为int整形
+```java
 public int add1(int num1,int num2){
     return num1+num2;
 }
-
+```
 2.float单精度
+```java
 public float add2(float num1,num2){
     return num1+num2;
 }
-
+```
 3.方法可以没有返回值
+```java
 public void add(int num1,int num2){
     int result = num1 + num2;
     System.out.println("结果是:" + result);
 }
 ```
 
->编写一个函数将二维数组进行转置
+* 编写一个函数将二维数组进行转置
 
 ```java
 import java.util.Scanner;
