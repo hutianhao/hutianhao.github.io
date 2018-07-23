@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class Test{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println(“请输入: ”);
+        System.out.println("请输入: ");
         if(scan.hasNext()){
             String str = scan.Next();
-            System.out.println(“输入的是: ”+str);
+            System.out.println("输入的是: "+str);
         }
     }
 }
