@@ -1,5 +1,5 @@
 ## java类与对象
->类的定义
+- 类的定义
 1. class 类名{成员变量;}<br/>
 2. class 类名{成员变量;成员方法;}
 3. 一个类中可以没有成员变量和成员方法
@@ -47,7 +47,7 @@ public class Person{
     }
 }
 ```
->类的成员方法-声明
+### 类的成员方法-声明
 
 ```java
 //访问修饰符 数据类型 函数名(参数列表);
@@ -134,7 +134,31 @@ public class TranformMatrix{
     }
 }
 ```
+---
+### 构造方法
+构造方法是一种特殊的方法，他的主要作用是完成对新对象的初试化。他有几个特点：  
 
+1. 方法名和类名相同
+2. 没有返回值
+3. 在创建一个方法的时候自动调用该类的构造方法，完成对新对象的初始化
+4. 一个类可以定义多个构造方法
+
+```java
+public class Test{
+    public static void main(String[] args){
+        Person person = new Person(2,"kevin");
+        System.out.println("person的年龄是:"+person.age+"person的姓名是:"+person.name);
+    }
+}
+class Person{
+    int age;
+    String name;
+    //构造方法
+    public Person(int age,String name){
+        this.name = name;
+        this.age = age;
+    }
+}
 
 
 
