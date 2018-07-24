@@ -19,6 +19,17 @@ public class Test{
         }
     }
 }
+//hasNextLine()可以识别空格并输出
+public class Test2{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("请输入:");
+        if (scan.hasNextLine()){
+            String str = scan.NextLine();
+            System.out.println("输出的是:" + str);
+        }
+    }
+}
 ```
 
 ```java
