@@ -146,16 +146,18 @@ public class TranformMatrix{
 ```java
 public class Test{
     public static void main(String[] args){
-        Person person = new Person(2,"kevin");
-        System.out.println("person的年龄是:"+person.age+"person的姓名是:"+person.name);
+        Person person = new Person(2,"kevin",male);
+        System.out.println(person.name+"的年龄是:"+person.age+person.name+"的性别是:"+person.sex);
     }
 }
 class Person{
     int age;
     String name;
+    String sex;
     //构造方法
-    public Person(int age,String name){
+    public Person(int age,String name,String sex){
         this.name = name;
         this.age = age;
+        this.sex = sex
     }
 }
