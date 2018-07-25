@@ -182,7 +182,7 @@ class Person{
 }
 ```
 
-<font color="red" face="微软雅黑" size=8>执行结果</font>
+执行结果
 
 ```
 调用一个参数的构造方法
