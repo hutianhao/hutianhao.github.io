@@ -11,25 +11,25 @@ private 私有的
 访问控制修饰符
 ```java
 public class Test4{
-		public static void main(String[] args){
-				Clerk clerk = new Clerk("kevin",25,10000000f);
-				System.out.println("薪水是："+ clerk.getSalary());
-		}
+    public static void main(String[] args){
+        Clerk clerk = new Clerk("kevin",25,10000000f);
+	System.out.println("薪水是："+ clerk.getSalary());
+    }
 }
 class Clerk{
     public String name;
-	private int age;
-	private float salary;
+    private int age;
+    private float salary;
 		
-	public Clerk(String name,int age,float salary){
-			this.name = name;
-			this.age = age;
-			this.salary = salary;
-	}
+    public Clerk(String name,int age,float salary){
+	this.name = name;
+	this.age = age;
+	this.salary = salary;
+    }
 //通过一个成员方法来控制和访问私有属性
-	public float getSalary(){
-		return this.salary;
-	}	
+    public float getSalary(){
+        return this.salary;
+    }	
 }
 ```
 
