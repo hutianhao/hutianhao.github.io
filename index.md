@@ -140,7 +140,7 @@ public class TranformMatrix{
 
 1. 方法名和类名相同
 2. 没有返回值
-3. 在创建一个方法的时候自动调用该类的构造方法，完成对新对象的初始化
+3. 在创建一个对象的时候自动调用该类的构造方法，完成对新对象的初始化
 4. 一个类可以定义多个构造方法
 
 ```java
@@ -155,9 +155,26 @@ class Person{
     String name;
     String sex;
     //构造方法
+    public Person(String name){
+        System.out.println("调用一个参数的构造函数");
+        this.name = name
+    }
+    public Person(int age,String name){
+        System.out.println("调用二个参数的构造函数");
+        this.age = age;
+        this.name = name;
+    }
     public Person(int age,String name,String sex){
+        System.out.println("调用三个参数的构造函数");
         this.name = name;
         this.age = age;
         this.sex = sex
     }
 }
+```
+<font color="red" face="微软雅黑" size=8>执行结果</font>
+```
+调用一个参数的构造方法
+null的年龄是:12
+null的性别是:null
+```
