@@ -56,4 +56,76 @@ class Clerk{
 5. java.awt.* 窗口工具包
 - 引入包   
 import java.util.*
+```java
+package com.kevin
+
+public class Test{
+    public static void main(String[] args){
+        Dog dog = new Dog();
+	System.out.println(dog.price);
+    }
+}
+class Dog{
+    public int a;
+    protected String name;
+    String color;
+    private float price;
+    
+    public void ab1(){
+        System.out.println(a);
+    } 
+}
+```
+```java
+package com.hookie;
+//Cat与test不在用一个包中，不可以直接去访问除了public以外的成员变量
+public class Cat {
+    public int age;
+    protected String name;
+    String address;
+    private float price;
+
+    public void getAge(){
+        System.out.println(age);
+    }
+    //如果想要访问除了public以外的成员变量的话，getName打开接口
+    public String getName(){
+        return this.name;
+    }
+}
+```
+```java
+package com.kevin;
+
+import com.hookie.Cat;
+
+import java.util.HashMap;
+
+public class Test {
+    public static void main(String[] args){
+        Dog dog = new Dog();
+        System.out.println(dog.color);
+        HashMap hm = new HashMap();
+        //不同包的调用，直接在上面import就可以
+        Cat cat = new Cat();
+        cat.getName();
+
+    }
+}
+//已经有了一个public，不能再定义为public的限制符
+class Dog{  
+    public int a;
+    protected String name;
+    String color;
+    private float price;
+
+    public void ab1(){
+        System.out.println(a);
+    }
+}
+```
+
+
+
+
 
