@@ -108,8 +108,7 @@ public class Test {
         HashMap hm = new HashMap();
         //不同包的调用，直接在上面import就可以
         Cat cat = new Cat();
-        cat.getName();
-
+        cat.getName();//访问Cat中的protected成员变量
     }
 }
 //已经有了一个public，不能再定义为public的限制符
