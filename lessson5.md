@@ -28,9 +28,9 @@ class Clerk{
     private float salary;
 		
     public Clerk(String name,int age,float salary){
-	      this.name = name;
-	      this.age = age;
-	      this.salary = salary;
+        this.name = name;
+	this.age = age;
+	this.salary = salary;
     }
 //通过一个成员方法来控制和访问私有属性，相当于一个接口
     public float getSalary(){
@@ -56,10 +56,4 @@ class Clerk{
 5. java.awt.* 窗口工具包
 - 引入包   
 import java.util.*
-
-
-
-
-
-
 
