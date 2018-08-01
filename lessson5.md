@@ -19,7 +19,7 @@
 public class Test4{
     public static void main(String[] args){
         Clerk clerk = new Clerk("kevin",25,10000000f);
-	  System.out.println("薪水是："+ clerk.getSalary());
+	System.out.println("薪水是："+ clerk.getSalary());
     }
 }
 class Clerk{
