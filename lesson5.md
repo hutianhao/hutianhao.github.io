@@ -123,6 +123,48 @@ class Dog{
     }
 }
 ```
+### 继承  
+1. 当多个类拥有相同的属性和方法时，可以从这些类中抽象出父类，在父类中定义这些相同的属性和方法，所有的子类不需要重新定义的某些属性和方法  
+2. class 子类 extends 父类  
+3. public和protected修饰符的属性和方法可以被继承，父类的私有属性和方法是不能被继承的，如果不希望子类继承某个属性或方法，将其声明为私有即可
+4. 子类最多继承一个父类，java中通过接口解决不能够多重继承的问题，C++中允许多重继承
+5. java中所有的类都是Object的子类，java.lang.Object
+6. 
+```java
+class Student{
+    //希望被继承，不能写成private，先写成public
+    public int age;
+    public String name;
+    public String gender;
+    
+    public void showName(){
+        System.out.println(this.name);
+    }
+}
+//小学生类继承Student类
+class Pupil extends Student{
+     public void showAge(){
+        System.out.println(this.age);
+    }
+}
+//中学生类继承Student类
+class MiddleStu extends Student{
+     public void showGender(){
+        System.out.println(this.gender);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
