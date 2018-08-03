@@ -164,9 +164,3 @@ class MiddleStu extends Student{
 
 
 
-
-
-
-
-
-
