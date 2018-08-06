@@ -153,11 +153,98 @@ class MiddleStu extends Student{
         System.out.println(this.gender);
     }
 }
+```
+- 例：继承JFrame类
+```java
+//继承JFrame类，可以生成一个对话框
+package com.kevin;
 
+import  javax.seing.*;
+public class Demo extends JFrame{
+    public static void main(String[] args){
+        Demo demo = new Demo();
+    }
+    public Demo(){//定义一个构造函数
+        this.setVisible(true);
+	this.setSize(400,400);
+    }
+}
+```
+- 方法重载：就是累的同一种功能的多种实现方式，采用哪一种方式取决于调用者给出的参数
+- 方法重载注意事项：
+1. 方法名相同
+2. 方法的参数类型，个数，顺序至少有一项不同
+3. 如果只是定义的函数返回类型不同，不能构成重载
+```java
+public int getMax(int a,int b){
+    return a;
+}
+public float getMax(int a,int b){
+    return a;
+}
+```
+4. 如果只是控制访问修饰符符号不一样能否构成重载？也不能构成重载
+```java
+protected int getMax(int a,int b){
+    return a;
+}
+public int getMax(int a,int b){
+    return a;
+}
+```
 
-
-
-
+```java
+public class Demo{
+    public static void main(String[] args){
+        
+    }
+}
+class GetMax{
+    public int getMax(int a,int b){
+        if(a>b){
+            return a;
+        }
+        else{
+             return b;
+	     }
+    }
+    public float getMax(float a,float b){
+    	if(a>b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
+}
+```
+- 方法的覆盖（override）
+```java
+public class Demo{
+    public static void main(String[] args){
+        Cat cat = new Cat();
+	cat.cry();
+    }
+}
+class Animal{
+    int age;
+    String name;
+    public void cry(){
+        System.out.println("我是动物不知道怎么叫");
+    }
+}
+class Cat extends Animal{
+    //覆盖父类的方法
+    public void cry(){
+        System.out.println("猫猫叫");
+    }
+}
+class Dog extends Animal{
+    //覆盖父类的方法
+    public void cry(){
+        System.out.println("汪汪叫");
+    }
+}
 
 
 
