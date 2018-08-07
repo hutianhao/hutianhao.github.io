@@ -24,7 +24,7 @@ public class Demo{
 class Child{
     public int num;
     Child nextChild; //引用类型
-    public Child(int num){
+    public Child(int num){//定义一个构造方法
         //给一个编号
         this.num = num;
     }
@@ -112,10 +112,3 @@ class CycLink{
     }
    
 }
-
-
-
-
-
-
-
