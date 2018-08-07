@@ -109,6 +109,5 @@ class CycLink{
             System.out.print(temp.num);
             temp = temp.nextChild;
         }while(temp!=this.firstChild);
-    }
-   
+    } 
 }
