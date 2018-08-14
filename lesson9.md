@@ -7,7 +7,14 @@
 ```java
 
 public class Test1 {
-
+    public static void main(String[] args){
+        Monkey monkey = new Monkey();
+        LittleMonkey littlemonkey = new LittleMonkey();
+        
+        monkey.jump();
+        littlemonkey.flying();
+        littlemonkey.swimming();
+    }
 }
 
 interface Bird{
@@ -21,7 +28,7 @@ interface Fish{
 class Monkey{
     int name;
     public void jump() {
-    System.out.println("monkey can jump");
+        System.out.println("monkey can jump");
     }
 }
 
